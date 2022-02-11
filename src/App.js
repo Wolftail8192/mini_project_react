@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import {Home} from "./page/home/Home";
 import {Movies} from "./page/Movies/Movies";
+import {Movie} from "./page/movie/Movie";
 
 
 function App  ()  {
@@ -23,7 +24,10 @@ function App  ()  {
             </ul>
             <Routes>
                 <Route path={'/'} element={<Home/>} />
-                <Route path={'/movies'} element={<Movies/>}/>
+                <Route path={'/movies'} element={<Movies/>}>
+                    <Route path={'movie-details'} element={<Movie/>} />
+                </Route>
+
             </Routes>
         </div>
     );

@@ -2,7 +2,7 @@ import "./Movies.css";
 import {useEffect, useState} from "react";
 import {getMovies} from "../../services";
 import MovieComponent from "../../components/movieComponent/MovieComponent";
-
+import {Outlet} from "react-router-dom";
 
 
 export function Movies () {
@@ -15,10 +15,15 @@ export function Movies () {
         });
     }, [])
     return (
-        <div className={'movie-list'}>
-            {
-                movies.map((movieItem) => <MovieComponent key={movieItem.id} item={movieItem}/>)
-            }
+        <div>
+            <div className={'o'}><Outlet/></div>
+            <br/>
+            <div className={'movie-list'}>
+
+                {
+                    movies.map((movieItem) => <MovieComponent key={movieItem.id} item={movieItem}/>)
+                }
+            </div>
         </div>
     )
 }

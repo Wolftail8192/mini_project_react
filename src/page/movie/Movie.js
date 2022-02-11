@@ -2,7 +2,7 @@ import "./Movie.css"
 export function Movie () {
     return (
         <div>
-            Movie
+            Movie-details
         </div>
     )
 }

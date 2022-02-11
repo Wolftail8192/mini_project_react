@@ -1,7 +1,10 @@
 .movie-card{
-    min-height: 200px;
+    min-height: 500px;
     background: aqua;
-    width: 300px;
+    width: 400px;
     margin: 5px;
+    text-align: center;
+
+
 
 }
