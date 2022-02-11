@@ -6,8 +6,8 @@ import {
     Link,
     Outlet
 } from "react-router-dom";
-import {Home} from "./components/home/Home";
-import {Movies} from "./components/Movies/Movies";
+import {Home} from "./page/home/Home";
+import {Movies} from "./page/Movies/Movies";
 
 
 function App  ()  {

@@ -1,0 +1,8 @@
+.movie-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+*{
+    font-size: 25px
+}
