@@ -6,6 +6,7 @@ export function MovieComponent ({item}) {
         <div className={'movie-card'}>
             {item.id} -- {item.original_title}
 
+
             <Link to={'movie-details'} state={item}> Movie details </Link>
 
         </div>
