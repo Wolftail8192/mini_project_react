@@ -3,6 +3,11 @@
     flex-wrap: wrap;
 
 }
+.movie-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .o{
     display: flex;
     text-align: center;

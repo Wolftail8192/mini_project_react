@@ -14,14 +14,17 @@ import {Movie} from "./page/movie/Movie";
 function App  ()  {
     return (
         <div>
-            <ul>
-                <li>
-                    <Link to={'/'} >home</Link>
-                </li>
-                <li>
-                    <Link to={'/movies'}>movies</Link>
-                </li>
-            </ul>
+            <div className={'ul'}>
+                <ul>
+                    <li>
+                        <Link to={'/'} >home</Link>
+                    </li>
+                    <li>
+                        <Link to={'/movies'}>movies</Link>
+                    </li>
+                </ul>
+            </div>
+
             <Routes>
                 <Route path={'/'} element={<Home/>} />
                 <Route path={'/movies'} element={<Movies/>}>
