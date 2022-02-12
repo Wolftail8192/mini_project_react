@@ -32,6 +32,12 @@ function App  ()  {
                 </Route>
 
             </Routes>
+            <hr/>
+            <div className={'footer'}>
+                <button>preview</button>
+                <button>next</button>
+            </div>
+
         </div>
     );
 };

@@ -8,6 +8,13 @@ export let axiosInstance = axios.create({
     }
 })
 
+export let axiosInstanceSprite = axios.create({
+    baseURL:'https://api.themoviedb.org/3/movie/'
+})
+export let getSprite = () => {
+    return axiosInstanceSprite.get('{movie_id}/images?api_key=4a7c600cc60d263ab60c8d32ea65cb23')
+}
+
 export let getMovies = () => {
     return axiosInstance.get('/{movie_id}')
 }

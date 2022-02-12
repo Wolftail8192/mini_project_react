@@ -1,5 +1,5 @@
 .movie-card{
-    min-height: 500px;
+    min-height: 550px;
     background: aqua;
     width: 400px;
     margin: 5px;
@@ -11,5 +11,10 @@
 .ul{
     display: flex;
     justify-content: end;
+    align-items: center;
+}
+.footer{
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
