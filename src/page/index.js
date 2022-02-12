@@ -1,3 +1,3 @@
-export * from './home';
-export * from './Movies';
-export * from './movie';
+export * from './home/Home';
+export * from './Movies/Movies';
+export * from './movie/Movie';

@@ -1,13 +1,21 @@
+.movie-list{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
 .movie-card{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
     min-height: 550px;
     background: aqua;
     width: 400px;
     margin: 5px;
-
-
-
-
 }
+
 .ul{
     display: flex;
     justify-content: end;

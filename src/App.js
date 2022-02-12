@@ -11,6 +11,7 @@ import {Movies} from "./page/Movies/Movies";
 import {Movie} from "./page/movie/Movie";
 
 
+
 function App  ()  {
     return (
         <div>
@@ -25,8 +26,11 @@ function App  ()  {
                 </ul>
             </div>
 
+
+
             <Routes>
                 <Route path={'/'} element={<Home/>} />
+
                 <Route path={'/movies'} element={<Movies/>}>
                     <Route path={'movie-details'} element={<Movie/>} />
                 </Route>
@@ -40,6 +44,6 @@ function App  ()  {
 
         </div>
     );
-};
+}
 
 export default App;
