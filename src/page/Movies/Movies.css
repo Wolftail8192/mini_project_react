@@ -3,7 +3,19 @@
     flex-wrap: wrap;
 
 }
-
+.o{
+    display: flex;
+    text-align: center;
+    min-height: 500px;
+    background: cornflowerblue;
+    width: 600px;
+    justify-content: center;
+    align-items: center;
+}
+.o_m{
+    display: flex;
+    justify-content: center;
+}
 
 *{
     font-size: 25px

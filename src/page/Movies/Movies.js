@@ -16,7 +16,10 @@ export function Movies () {
     }, [])
     return (
         <div>
-            <div className={'o'}><Outlet/></div>
+            <div className={'o_m'}>
+                <div className={'o'}><Outlet/></div>
+            </div>
+
             <br/>
             <div className={'movie-list'}>
 

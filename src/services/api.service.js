@@ -11,3 +11,8 @@ export let axiosInstance = axios.create({
 export let getMovies = () => {
     return axiosInstance.get('/{movie_id}')
 }
+
+export let getMovie = () => {
+    return axiosInstance.get('/{movie_id}')
+}
+
