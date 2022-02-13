@@ -2,8 +2,9 @@ import "./Movie.css"
 import {useLocation} from "react-router-dom";
 
 import {useEffect, useState} from "react";
-import {axiosInstance, getMovie} from "../../services";
+import {apiConfig, axiosInstance, getMovie} from "../../services";
 import {axiosInstanceSprite, getSprite} from "../../services";
+
 
 
 export function Movie () {
@@ -11,7 +12,7 @@ export function Movie () {
     let [movie, setMovie] = useState({})
     let [movieForm, setMovieForm]=useState({})
 
-    // let {backdrop_path:{}}=MovieForm;
+
 
     useEffect(()=>{
         getMovie(id).then(value =>
@@ -23,22 +24,28 @@ export function Movie () {
 
         setMovieForm({...value.id}))
 
+
+
         console.log(movieForm);
 
-        // axiosInstanceSprite(id).then(response => {
-        //     console.log(response.data);
-        //     setMovieForm({...response.data})
-        // })
 
 
     },[id])
 
     console.log(Movie);
+
+    let Picture = backdrop_path;
+    console.log(Picture);
+
+
+   
     return (
         <div className={'t'}>
             <h1>{original_title}</h1>
-            <p>{overview}</p>
-            <img src="MovieForm" alt=""/>
+            <p>{backdrop_path}</p>
+            <img src='https://image.tmdb.org/t/p/w200/{Picture}' alt=""/>
+
+
             <hr/>
             <div>
                 <button>MovieDetails</button>

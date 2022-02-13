@@ -9,10 +9,15 @@ export let axiosInstance = axios.create({
 })
 
 export let axiosInstanceSprite = axios.create({
-    baseURL:'https://api.themoviedb.org/3/movie/'
+    baseURL:'image.tmdb.org/t/p/w200'
 })
-export let getSprite = () => {
-    return axiosInstanceSprite.get('{movie_id}/images?api_key=4a7c600cc60d263ab60c8d32ea65cb23')
+// export let getSprite = () => {
+//
+// }
+
+export let getSprite = (url) => {
+    return axiosInstanceSprite.get('{url}')
+
 }
 
 export let getMovies = () => {
@@ -22,4 +27,11 @@ export let getMovies = () => {
 export let getMovie = () => {
     return axiosInstance.get('/{movie_id}')
 }
+
+// export const apiConfig = {
+//     baseUrl: 'https://api.themoviedb.org/3/',
+//     apiKey: '4a7c600cc60d263ab60c8d32ea65cb23',
+//     originalImage: (imgPath) => `https://image.tmdb.org/t/p/original/${imgPath}`,
+//     w500Image: (imgPath) => `https://image.tmdb.org/t/p/w500/${imgPath}`,
+// };
 
