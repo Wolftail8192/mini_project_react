@@ -5,6 +5,9 @@ import {useEffect, useState} from "react";
 import {apiConfig, axiosInstance, getMovie} from "../../services";
 import {axiosInstanceSprite, getSprite} from "../../services";
 
+import MovieDetails from "../MovieDetails/MovieDetails";
+
+
 
 
 export function Movie () {
@@ -24,11 +27,7 @@ export function Movie () {
 
         setMovieForm({...value.id}))
 
-
-
         console.log(movieForm);
-
-
 
     },[id])
 
@@ -37,8 +36,9 @@ export function Movie () {
     let Picture = backdrop_path;
     console.log(Picture);
 
+    console.log(getSprite);
 
-   
+
     return (
         <div className={'t'}>
             <h1>{original_title}</h1>
@@ -48,7 +48,7 @@ export function Movie () {
 
             <hr/>
             <div>
-                <button>MovieDetails</button>
+                <button onClick={MovieDetails}>MovieDetails</button>
             </div>
         </div>
     )

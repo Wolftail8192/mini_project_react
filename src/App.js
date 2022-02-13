@@ -9,14 +9,14 @@ import {
 import {Home} from "./page/home/Home";
 import {Movies} from "./page/Movies/Movies";
 import {Movie} from "./page/movie/Movie";
-import pictures from './pictures/footer-bg.jpg'
+import bg from './pictures/footer-bg.jpg'
 
 
 function App  ()  {
 
     return (
         // <BrowserRouter>
-            <div style={{backgroundImage:'./pictures/footer-bg.jpg'}}>
+            <div style={{backgroundImage: `url(${bg}`}}>
                 <div className={'ul'}>
                     <ul>
                         <li>
